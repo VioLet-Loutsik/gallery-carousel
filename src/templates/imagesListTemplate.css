@@ -1,0 +1,10 @@
+.image-block-main {
+  padding: 20px;
+  margin: auto;
+  /* background-color: rgba(0, 0, 0, 0.87); */
+}
+
+.image-block-image {
+  height: 13rem;
+  width: 15rem;
+}

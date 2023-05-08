@@ -1,0 +1,25 @@
+.header_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  /* border: 2px solid red; */
+  /* background-color: #04121b; */
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.header-block-text {
+  color: aliceblue;
+  margin: auto; 
+}
+.header-block-gallery {
+  color: aliceblue;
+  margin: auto;  
+}
+/* .header-block-categories {
+  color: aliceblue;
+  margin: auto; 
+} */
+.gallery {
+  text-transform: uppercase;  
+}
+
