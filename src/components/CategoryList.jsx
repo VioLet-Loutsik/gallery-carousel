@@ -68,6 +68,7 @@ const CategoryList = () => {
           Creative
         </button>
       </div>
+
     </div>
   );
 };

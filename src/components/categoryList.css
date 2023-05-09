@@ -19,6 +19,19 @@ button {
 .buttons-category-search {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
   .buttons-category-search {
     display: block;
@@ -29,4 +42,6 @@ button {
   .button-category-single{
     font-size: 20px;
   }
+
+
 }

@@ -1,4 +1,7 @@
-.header_block {
+.header-burger {
+display: none;
+}
+.header-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 25px;
@@ -20,8 +23,32 @@
   margin: auto; 
 } */
 .gallery {
+  font-weight: 1000;
   text-transform: uppercase;
 }
+
+@media (max-width: 992px) {.header-block
+  .header-burger {
+    display: block;    
+    }
+    .header-block {
+      /* display: grid;
+      grid-template-columns: 60% 30%; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
   .header-block-search-top{
     display: none;
