@@ -4,6 +4,7 @@ import Fancybox from "../components/Fancybox";
 // import { Carousel } from "@fancyapps/ui";
 
 function ImagesListTemplate({ data }) {
+// console.log(data);
   return (
     <div className="image-block-main">
       <Fancybox
@@ -20,7 +21,7 @@ function ImagesListTemplate({ data }) {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={data.urls.small} alt={data.alt_description}></img>
+            <img src={data.urls.small} alt={data.alt_description}></img>       
           </a>
         </div>
       </Fancybox>

@@ -16,6 +16,7 @@ const UseAxios = (param) => {
         setIsLoading(true);
         const res = await axios(url);
         setResponse(res.data.results);
+        console.log(res.data.results);
         } catch(err) {
             setError(err)
         }   finally {

@@ -31,7 +31,7 @@ function App() {
         <SearchField />
       </Header>
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </ImageContext.Provider>
   );
 }

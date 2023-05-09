@@ -1,17 +1,32 @@
 button {
-    color: rgba(240, 248, 255, 0.504);
-    width: fit-content;
-    background-color: rgba(128, 128, 128, 0.684);
-    border: none;
-    border-radius: 30px;
-    padding: 5px;
-    margin: 10px;
+  color: rgba(240, 248, 255, 0.504);
+  width: fit-content;
+  background-color: rgba(14, 14, 14, 0.945);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0 8px;
+}
+.buttons-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0 35px;
 }
 .button-category-single:hover {
-    color: rgba(240, 248, 255, 0.997);
+  color: white;
 }
-/* @media (max-width: 1500px) {
-    .buttons-category{
-display: inherit;
+.buttons-category-search {
+  display: none;
 }
-} */
+@media (max-width: 992px) {
+  .buttons-category-search {
+    display: block;
+  }
+  .buttons-category {
+    justify-content: center;
+  }
+  .button-category-single{
+    font-size: 20px;
+  }
+}
