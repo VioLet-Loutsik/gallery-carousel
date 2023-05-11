@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 function ImagesListTemplate({ data }) {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 2000 });
   }, []);
   return (
     <div className="image-block-main d-flex flex-column align-items-center justify-content-center p-5">
