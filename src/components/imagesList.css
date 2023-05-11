@@ -1,13 +1,9 @@
 .image-block-template {
-  /* display: flex;
-  flex-wrap: wrap; */
   background-color: rgba(0, 0, 0, 0.87);
 }
+
 @media (max-width: 1200px) {
-  /* button {
+   .sc-bgqQcB {
     display: none;
-  } */
-  .sc-bgqQcB {
-   display: none;
-  } 
+  }
 }

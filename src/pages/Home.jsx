@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home-block">
       <div className="home-block-images">
         <ImagesList />
-       </div>
+      </div>
       <div className="home-block-category">
         <CategoryList />
       </div>

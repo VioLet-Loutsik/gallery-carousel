@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useContext } from "react";
-import { useEffect } from "react";
 import CategoryListTemplate from "../templates/CategoryListTemplate";
 import { ImageContext } from "../App";
 import "./categoryList.css";
@@ -8,20 +7,6 @@ import SearchField from "./SearchField";
 
 const CategoryList = () => {
   const [photos, setPhotos] = useState([]);
-  //     const [category, setCategory] = useState("mixed");
-  // console.log(category);
-  // const urlApi = `https://api.unsplash.com/photos/random?client_id=Hhx6Rg_5DSJL8r9qQ53nSvvIboiHJ6yHn_C9ebngE4w&count=10&query=${category}`;
-  //     useEffect(() => {
-  //         const fetchPhotos = async () => {
-  //             await fetch(urlApi)
-  //             .then((data) => data.json())
-  //             .then((x) => {
-  //                 setPhotos(x)
-  //             });
-  //         };
-  //         fetchPhotos();
-  //     }, [urlApi]);
-
   const { fetchData } = useContext(ImageContext);
 
   const categoryOcean = () => {
@@ -68,7 +53,6 @@ const CategoryList = () => {
           Creative
         </button>
       </div>
-
     </div>
   );
 };

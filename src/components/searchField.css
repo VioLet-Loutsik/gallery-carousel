@@ -37,6 +37,9 @@ input {
   .header-block-search {
     width: 35px;
   }
+  .header-block-search:hover {
+    width: 220px;
+  }
   .search-img {
     top: 25%;
     right: 15%;

@@ -1,30 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./imagesListTemplate.css";
-import Fancybox from "../components/Fancybox";
-// import { Carousel } from "@fancyapps/ui";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function ImagesListTemplate({ data }) {
-// console.log(data);
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
-    <div className="image-block-main">
-      <Fancybox
-        options={{
-          Carousel: {
-            infinite: false,
-          },
-        }}
+    <div className="image-block-main d-flex flex-column align-items-center justify-content-center p-5">
+      <div
+        className="image-block-image text-white bg-dark p-5 m-5"
+        data-aos="fade-down"
       >
-        <div className="image-block-image">
-          <a
-            data-fancybox="gallery"
-            href={data.urls.regular}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={data.urls.small} alt={data.alt_description}></img>       
-          </a>
-        </div>
-      </Fancybox>
+        <a
+          data-fancybox="gallery"
+          href={data.urls.regular}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={data.urls.small} alt={data.alt_description}></img>
+        </a>
+      </div>
     </div>
   );
 }
