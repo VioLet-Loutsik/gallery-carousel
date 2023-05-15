@@ -44,6 +44,7 @@ const SearchField = () => {
         disabled={!searchValue}
         className="search-img"
       />
+      
     </div>
   );
 };
